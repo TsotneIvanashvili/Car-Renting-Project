@@ -13,7 +13,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    background-color: #a3a3a3;
     padding: 30px;
     border-radius: 10px;
     width: 1200px;
@@ -24,7 +23,7 @@
   
   /* Card */
   .car-card {
-    background: #636262;
+    background: #ffebd4;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
@@ -35,7 +34,7 @@
   
   .car-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 12px 36px #4e7a52;
   }
   
   .car-image {
@@ -47,7 +46,7 @@
   /* Body */
   .card-body {
     padding: 20px;
-    color: #E3E3E3;
+    color: rgb(47, 47, 47);
   }
   
   /* Header */
@@ -59,7 +58,7 @@
   
   .car-card-header h2 {
     font-size: 1.3rem;
-    color: #E3E3E3;
+    color: #4E6D7A;
     margin: 0;
   }
   
@@ -82,12 +81,12 @@
   }
   
   .label {
-    color: #ccc;
+    color: #446573;
     font-weight: 500;
   }
   
   .value {
-    color: #fff;
+    color: #4E6D7A;
     font-weight: 600;
   }
   
@@ -95,8 +94,8 @@
   .book-btn {
     margin-top: 20px;
     padding: 10px 16px;
-    background-color: #10b981;
-    color: #2F2E2E;
+    background-color: #2D6A4F;
+    color: #ffffff;
     border: none;
     border-radius: 12px;
     font-weight: 600;
@@ -105,6 +104,52 @@
   }
   
   .book-btn:hover {
-    background-color: #059669;
+    background-color: #A8DADC;
+    color: #2D6A4F;
   }
   
+
+video{
+  width: 100%;
+}
+
+
+
+.background{
+  background-image: url("../assets/images/photo-1566800249264-005d1c805a8a.PNG");
+  width: 100%;
+  height: 500px;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+
+.text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 700px;
+  text-align: center;
+  color: #47692ec7;
+  gap: 20px;
+  max-width: 100%;
+}
+
+h1{
+  font-size: 45px;
+  padding: 20px;
+
+}
+
+p{
+  padding: 20px;
+
+
+}

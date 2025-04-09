@@ -1,4 +1,9 @@
 body{
-    background-color: #2F2E2E;
+    background-color: #2d6a4faa;
+    font-family: sans-serif;
+}
 
+* {
+    margin: 0;
+    padding: 0;
 }

@@ -1,0 +1,34 @@
+header{
+    display: flex;
+    background-color: #2D6A4F;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+
+.cars{
+    transition: 0.5s ease-in-out;
+}
+.cars:hover{
+    transform: rotate(-20deg);
+
+}
+
+.nav{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    color: white;
+
+}
+
+a:hover{
+    transform: scale(1.1);
+}

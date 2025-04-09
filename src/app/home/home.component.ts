@@ -4,26 +4,24 @@ import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-home',
-  imports: [RouterModule],
+  imports: [RouterModule, ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
 
-  constructor(public service: ApiService) {
-    this.showAllCars()
-  }
+constructor(public service: ApiService) {
+  this.showAllCars()
+}
 
-  public cars:any
-
-
-  showAllCars() {
-    this.service.getCars().subscribe( (data) => {
-      this.cars = data
-    })
-  }
+public cars:any;
 
 
-
+showAllCars() {
+  this.service.getCars().subscribe( (data) => {
+    this.cars = data
+  })
+}
 
 }
+
