@@ -1,1 +1,32 @@
-<p>home works!</p>
+<section class="main">
+
+    <section class="car-list">
+        @for (item of cars; track $index) {
+          <div class="car-card">
+            <img [src]="item.imageUrl1" alt="Car Image" class="car-image">
+      
+            <div class="card-body">
+              <div class="car-card-header">
+                <h2>{{ item.model }}</h2>
+                <p class="price">${{ item.price }}</p>
+              </div>
+      
+              <div class="car-card-details">
+                <div class="detail">
+                  <span class="label">Transmission:</span>
+                  <span class="value">{{ item.transmission }}</span>
+                </div>
+                <div class="detail">
+                  <span class="label">Capacity:</span>
+                  <span class="value">{{ item.capacity }} people</span>
+                </div>
+              </div>
+      
+              <button class="book-btn">Book Now</button>
+            </div>
+          </div>
+        }
+      </section>
+      
+</section>
+

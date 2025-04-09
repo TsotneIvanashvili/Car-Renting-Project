@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -5,5 +6,20 @@ import { Injectable } from '@angular/core';
 })
 export class ApiService {
 
-  constructor() { }
+  constructor(public http: HttpClient) { 
+
+  }
+
+
+
+  getCars (){
+    return this.http.get(`https://rentcar.stepprojects.ge/api/Car`)
+  }
+
+
+  getFiltered(id : any) {
+    return this.http.get(`https://rentcar.stepprojects.ge/api/Car/filter?${id}`)
+  }
+
+
 }
