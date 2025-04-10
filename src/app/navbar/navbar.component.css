@@ -1,9 +1,14 @@
 header{
     display: flex;
-    background-color: #2D6A4F;
     justify-content: space-between;
     align-items: center;
     padding: 25px;
+    margin: 10px;
+    border-radius: 10px;
+    max-width: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
 }
 
 .cars{
@@ -21,14 +26,31 @@ header{
     align-items: center;
 }
 
-a{
+a {
     font-size: 24px;
     cursor: pointer;
     transition: 0.5s ease-in-out;
-    color: white;
-
+    color: #1A1A1A;
+    position: relative;
+    text-decoration: none; /* remove default underline */
 }
 
-a:hover{
-    transform: scale(1.1);
+a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px; /* space between text and underline */
+    width: 0;
+    height: 2px;
+    background-color: #004FCC;
+    transition: width 0.4s ease-in-out;
+}
+
+a:hover {
+    transform: scale(1.05);
+    color: #004FCC;
+}
+
+a:hover::after {
+    width: 100%;
 }

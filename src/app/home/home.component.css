@@ -23,7 +23,7 @@
   
   /* Card */
   .car-card {
-    background: #ffebd4;
+    background-color: #F2F2F2;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
@@ -34,7 +34,7 @@
   
   .car-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 12px 36px #4e7a52;
+    box-shadow: 0 12px 36px #191919;
   }
   
   .car-image {
@@ -58,7 +58,7 @@
   
   .car-card-header h2 {
     font-size: 1.3rem;
-    color: #4E6D7A;
+    color: #1A1A1A;
     margin: 0;
   }
   
@@ -81,12 +81,12 @@
   }
   
   .label {
-    color: #446573;
+    color: #1A1A1A;
     font-weight: 500;
   }
   
   .value {
-    color: #4E6D7A;
+    color: #090909;
     font-weight: 600;
   }
   
@@ -94,8 +94,8 @@
   .book-btn {
     margin-top: 20px;
     padding: 10px 16px;
-    background-color: #2D6A4F;
-    color: #ffffff;
+    background-color: #0066FF;
+    color: #FFFFFF;
     border: none;
     border-radius: 12px;
     font-weight: 600;
@@ -104,8 +104,7 @@
   }
   
   .book-btn:hover {
-    background-color: #A8DADC;
-    color: #2D6A4F;
+    background-color: #004FCC;
   }
   
 
@@ -116,7 +115,7 @@ video{
 
 
 .background{
-  background-image: url("../assets/images/photo-1566800249264-005d1c805a8a.PNG");
+  background-image: url("../assets/images/pexels-nordic-overdrive-202768-627678.jpg");
   width: 100%;
   height: 500px;
   background-position: center; /* Center the image */
@@ -127,19 +126,24 @@ video{
   align-items: center;
   flex-direction: column;
   max-width: 100%;
+  background-attachment: fixed;
 }
 
 
 .text{
-  display: flex;
+  display: inline-block;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 700px;
   text-align: center;
-  color: #47692ec7;
-  gap: 20px;
+  color: #1A1A1A;
+  background-color: #ffffffc9;
+  line-height: 1.6;
+  font-family: 'Segoe UI', sans-serif;  gap: 20px;
   max-width: 100%;
+  background-clip: padding-box; /* Ensures the background stops at the text width */
+  border-radius: 20px;
 }
 
 h1{

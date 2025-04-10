@@ -17,9 +17,8 @@ export class ApiService {
   }
 
 
-  getFiltered(id : any) {
-    return this.http.get(`https://rentcar.stepprojects.ge/api/Car/filter?${id}`)
+  getDetails(id: any) {
+    return this.http.get(`https://rentcar.stepprojects.ge/api/Car/${id}`)
   }
-
 
 }

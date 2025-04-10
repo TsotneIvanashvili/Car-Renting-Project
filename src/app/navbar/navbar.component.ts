@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { LoginComponent } from "../login/login.component";
-import { RegisterComponent } from '../register/register.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
-  imports: [LoginComponent, RegisterComponent],
+  imports: [RouterModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
