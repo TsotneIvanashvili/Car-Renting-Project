@@ -1,8 +1,40 @@
-<section>
-    <div class="images">
+<section class="main">
+    <section>
+        <div class="images">
+            <img [src]="carsInfo.imageUrl1" alt="">
+        </div>
+    
+        <div class="booking">
+            <h1>{{carsInfo.brand}}  {{carsInfo.model}} Price: {{carsInfo.price}}$</h1>
+            
+            <div class="booking-second">
+                <div class="div">
+                    <h3>Location:</h3>
+                    <h3 class="dark">{{carsInfo.city}}</h3>
+                </div>
+                <div class="div">
+                    <h3>Transmission:</h3>
+                    <h3 class="dark">{{carsInfo.transmission}}</h3>
+                </div>
+                <div class="div">
+                    <h3>Year of release:</h3>
+                    <h3 class="dark"> {{carsInfo.year}}y</h3>
+                </div>
 
-    </div>
+                <div class="div">
+                    <h3>Capacity:</h3>
+                    <h3> {{carsInfo.capacity}} People</h3>
+                </div>
+                <div class="div">
+                    <h3>Fuel Capacity:</h3>
+                    <h3>{{carsInfo.fuelCapacity}}L</h3>
+                </div>
 
-    <div class="booking"></div>
 
+            </div>
+            <button>Rent Now</button>
+
+        </div>
+    
+    </section>
 </section>

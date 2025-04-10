@@ -1,0 +1,53 @@
+.main-emoji{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    box-shadow: 0 6px 20px #191919af;
+    padding: 50px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.clock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;    
+}
+.clock2{
+    transition: 0.3s ease-in-out;
+}
+
+.clock2:hover{
+    transform: rotate(-20deg);
+
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    width: 250px;
+    gap: 10px;
+}
+
+.circle{
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1000px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -17,7 +17,7 @@ export class DetailsComponent {
 
   showDetails() {
     this.actR.params.subscribe( (data:any) => {
-      this.service.getDetails(data.id).subscribe( (data: any) => {
+      this.service.getDetails(data.brand).subscribe( (data: any) => {
         console.log(data);
         this.carsInfo = data
       } )

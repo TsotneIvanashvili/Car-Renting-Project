@@ -34,7 +34,6 @@
   
   .car-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 12px 36px #191919;
   }
   
   .car-image {
@@ -156,4 +155,11 @@ p{
   padding: 20px;
 
 
+}
+
+
+.icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

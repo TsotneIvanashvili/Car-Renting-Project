@@ -17,8 +17,8 @@ export class ApiService {
   }
 
 
-  getDetails(id: any) {
-    return this.http.get(`https://rentcar.stepprojects.ge/api/Car/${id}`)
+  getDetails(brand: any) {
+    return this.http.get(`https://rentcar.stepprojects.ge/api/Car/${brand}`)
   }
 
 }
